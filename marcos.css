@@ -82,7 +82,8 @@ body{
     text-align: center;
 }
 .img{
-    width: 90vh;
+    width: 500px;
+    height: 333.2;
 }
 .parrafo-texto{
     margin:3em 5em;
@@ -111,8 +112,14 @@ body{
     .contenedor2, .contenedor3{
         width: 100vw;
     }
-    .img{
-        width:50vh;
+    .fotoymapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img, .mapa{
+        width:325px;
+        height: 215px;
     }
     .parrafo-texto{
         font-size:1em;
