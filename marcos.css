@@ -50,7 +50,7 @@ body{
     margin-top: 1em;
     font: 2em "Oswald"
 }
-.links{
+.links, .links2{
     flex:1;
     font: 1.3em "raleway" ;
     color:#fff;
@@ -62,7 +62,9 @@ body{
     background-color: #fff;
     color:#000;
 }
-
+.links2{
+    display: none;
+}
 /*terminamos con el contenido principal*/
 .contenedor3{
     grid-area: c3;
@@ -109,9 +111,16 @@ body{
         "c3 c3"
         "c3 c3";
     }
+    .links2{
+        display: block;
+    }
     .contenedor2, .contenedor3{
         width: 100vw;
     }
+    .contenedor3{
+        height: 100vh;
+    }
+    
     .fotoymapa{
         display: flex;
         flex-direction: column;
@@ -122,7 +131,9 @@ body{
         height: 215px;
     }
     .parrafo-texto{
-        font-size:1em;
+        font-size:16px;
+        padding:16px;
+        margin:48px;
     }
     .titulo1{
         font-size:2em;
