@@ -6,7 +6,7 @@
 a{
     text-decoration: none;
 }
-.contenedor1, .contenedor2, .contenedor3, .links{
+.contenedor1, .contenedor2, .contenedor3, .links, .links-container,.links-none{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,11 +46,9 @@ body{
     width: 20vw;
 }
 .titulo2{
-    flex:1;
-    margin-top: 1em;
     font: 2em "Oswald"
 }
-.links, .links2{
+.links{
     flex:1;
     font: 1.3em "raleway" ;
     color:#fff;
@@ -62,8 +60,9 @@ body{
     background-color: #fff;
     color:#000;
 }
-.links2{
-    display: none;
+.links-none, .links-container{
+    flex: 1;
+    width: 100%;
 }
 /*terminamos con el contenido principal*/
 .contenedor3{
@@ -111,16 +110,38 @@ body{
         "c3 c3"
         "c3 c3";
     }
-    .links2{
-        display: block;
+    .titulo2{
+        text-decoration: underline;
     }
+    #indice:active{
+        background-color: #fff;
+    }
+    .links:active{
+        background-color: #fff;
+    }
+    .links-none{
+        display: none;
+    }
+    .links-container{
+        width: 100vw;
+        flex: none;
+        height: 50vh;
+    }
+    .contenedor2{
+        height:auto;
+        justify-content: center;
+    }
+
     .contenedor2, .contenedor3{
         width: 100vw;
     }
     .contenedor3{
         height: 100vh;
+        overflow-y: visible;
     }
-    
+    .contenedor4{
+        height: auto;
+    }
     .fotoymapa{
         display: flex;
         flex-direction: column;
